@@ -15,7 +15,7 @@ const HomeScreen: React.FC<HomeScreenProps> = (props: HomeScreenProps) => {
   };
   return (
     <ScrollView
-      bounces={false}
+      bounces={true}
       style={{ backgroundColor: colors.backgroundColor }}
       contentContainerStyle={{
         flex: 1,
