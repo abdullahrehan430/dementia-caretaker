@@ -18,9 +18,11 @@ const NewRoutineScreen: React.FC<NewRoutineProps> = (
   const navigateToCustomScreen = () => {
     navigation.navigate("CustomRoutineScreen");
   };
+
   const renderItems = ({ item, index }: any) => {
     return <RoutineData />;
   };
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.backgroundColor }}>
       <View style={commonStyles.container}>
@@ -65,26 +67,6 @@ const NewRoutineScreen: React.FC<NewRoutineProps> = (
           >
             Daily Tasks
           </Text>
-          {/* <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <Text style={{ color: colors.AliceBlue, paddingRight: 20 }}>
-            8:00
-          </Text>
-          <View
-            style={{
-              flexDirection: "row",
-              alignItems: "center",
-              backgroundColor: colors.AliceBlue,
-              width: "85%",
-              paddingLeft: 15,
-              paddingTop: 20,
-              paddingBottom: 20,
-              borderRadius: 5,
-            }}
-          >
-            <FontAwesom name="wrench" color={colors.black} />
-            <Text style={{ color: colors.black, marginLeft: 7 }}>Exersice</Text>
-          </View>
-        </View> */}
           <FlatList
             data={[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}
             renderItem={renderItems}
